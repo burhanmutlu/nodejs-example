@@ -1,0 +1,35 @@
+<body style="background-color: rgb(249, 252, 255)">
+
+
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Soru</th>
+                <th scope="col">Ders Adı</th>
+                <th scope="col">Eklenme Tarihi</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <script>var i=1;</script>
+            {{#each exam}}
+            <tr class="table-light">
+              <th scope="row"><script>document.write(i++);</script></th>             
+              <td>{{soru}}</td>
+              <td>{{ders}}</td>
+              <td>{{eklenmeTarihi}}</td>
+              <td><a href="/exam/{{_id}}"><button class="btn btn-secondary" type="button">Düzenle</button></a></td>
+            </tr>
+            {{/each}}
+          </tbody>
+    </table>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

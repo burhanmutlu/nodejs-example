@@ -1,0 +1,40 @@
+
+.soru{
+  background-color: rgb(213, 255, 255); 
+  max-width: 65%; 
+  margin-left: 3%; 
+  margin-top: 2%; 
+  padding: 2%;
+}
+
+#secenekler {
+background-color: rgb(239, 255, 255); 
+}
+
+#butonlar {
+background-color: rgb(254, 255, 255);
+margin-left: 3%; 
+margin-top: 2%; 
+padding: 2%;        
+}
+
+#sayac {
+background-color: rgb(255, 219, 219);
+max-width: 65%; 
+margin-left: 3%;
+margin-top: 2%; 
+}
+
+.btn-outline-info{
+margin-left: 5%;
+}
+
+.btn-success{
+margin-left: 30%;
+}
+
+@media only screen and (max-width: 700px) {
+  .soru , #sayac {
+      max-width: 90%; 
+  }
+}
